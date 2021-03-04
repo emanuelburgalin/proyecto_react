@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-//create header
-
+//Cards
 export function Cards(props) {
 	return (
 		<div className="col">
@@ -24,7 +23,7 @@ export function Cards(props) {
 	);
 }
 
-Cards.PropTypes = {
+Cards.propTypes = {
 	card: {
 		image: PropTypes.string,
 		alt: PropTypes.string,

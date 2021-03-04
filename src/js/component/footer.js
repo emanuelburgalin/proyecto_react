@@ -1,11 +1,9 @@
 import React from "react";
 
-export function jumbotron() {
-    return (
-      <div className="text-center mt-5">
-			
-			
-      </div>
-      
-    );
+export function Footer() {
+	return (
+		<div className="footer bg-dark mt-5">
+			<p>2021, Built By Emanuel burgalin</p>
+		</div>
+	);
 }

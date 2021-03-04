@@ -1,26 +1,44 @@
 import React from "react";
 
-import { Navbar } from "./component/Navbar";
-import { jumbotron } from "./component/Jumbotron";
-import { cards } from "./component/cards";
+import { Navbar } from "./component/navbar.js";
+import { Jumbotron } from "./component/jumbotron.js";
+import { Cards } from "./component/cards.js";
+import { Footer } from "./component/footer";
 
 const carta = {
-	image: "/workspace/react-hello/src/img/rigo-baby.jpg",
+	image: "http://placehold.it/500x325.jpg",
 	alt: "rigo",
-	title: "Hello rigo",
-	description: "jkjkcjnednk",
+	title: "Hello Rigo",
+	description: "loesk ksksksksksks",
 	url: "http://wikipedia.com",
 	button: "click here"
 };
+
+//create layout
 export function App() {
 	return (
-		<div className="text-center mt-5">
+		<div className="text-center">
 			<Navbar />
 
 			<div className="container">
 				<Jumbotron />
-				<Cards card={carta} />
+
+				<div className="row">
+					<div className="col">
+						<Cards card={carta} />
+					</div>
+					<div className="col">
+						<Cards card={carta} />
+					</div>
+					<div className="col">
+						<Cards card={carta} />
+					</div>
+					<div className="col">
+						<Cards card={carta} />
+					</div>
+				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }
